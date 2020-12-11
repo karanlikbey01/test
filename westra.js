@@ -276,7 +276,7 @@ message.channel.send(Megenge)
 
 
 client.on('ready', () => {
-client.user.setActivity(`westra`, { type: 'WATCHING' })
+client.user.setActivity(`UptimeBOT`, { type: 'WATCHING' })
 //client.user.setStatus('dnd')
 })
 
@@ -319,4 +319,4 @@ client.on("message", async message => {
 const Log = message => {
 console.log(`${message}`)
 }
-client.login('tokenı buraya girmen gerek')
+client.login('Nzg2ODUxNDI1MjMyNzQ4NTg1.X9Mafg.Vf61P5iiIgSPp4hXmGZ28uUvF4s')
