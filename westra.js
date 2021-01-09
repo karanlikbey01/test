@@ -66,11 +66,11 @@ client.on('message', async message => {
   const UpTime = new Discord.RichEmbed()
   .setColor('RED')
   .setDescription(`
-  **==================================**
+  **================================**
   **Hata: ${Hata} ❌**
 
   **Lutfen Bir URL Girin**
-  ==================================
+  ===============================
   `)
   .setImage('https://media.discordapp.net/attachments/748517679119335424/748562753253408920/IMG_20200827_192051.jpg?width=436&height=269')
   .setTimestamp()
@@ -268,4 +268,4 @@ client.on("message", async message => {
 const Log = message => {
 console.log(`${message}`)
 }
-client.login('')
+client.login('Nzg5NjU3NjM2NDA4MDAwNTMz.X91P-w.YsYE8H9YDVJKk-6Rbz1_npW04AU')
