@@ -1,4 +1,55 @@
-
+// by Westra
+// by Westra
+// by Westra
+// by Westra
+// by Westra
+// by Westra
+// by Westra
+// by Westra
+// by Westra
+// by Westra
+// by Westra
+// by Westra
+// by Westra
+// by Westra
+// by Westra
+// by Westra
+// by Westra
+// by Westra
+// by Westra
+// by Westra
+// by Westra
+// by Westra
+// by Westra
+// by Westra
+// by Westra
+// by Westra
+// by Westra
+// by Westra
+// by Westra
+// by Westra
+// by Westra
+// by Westra
+// by Westra
+// by Westra
+// by Westra
+// by Westra
+// by Westra
+// by Westra
+// by Westra
+// by Westra
+// by Westra
+// by Westra
+// by Westra
+// by Westra
+// by Westra
+// by Westra
+// by Westra
+// by Westra
+// by Westra
+// by Westra
+// by Westra
+// by Westra
 const Discord = require('discord.js')
 const db = require('quick.db') 
 const client = new Discord.Client({ disableEveryone: true })
@@ -52,7 +103,7 @@ client.on('message', async message => {
     .setThumbnail(message.author.avatarURL)
     .setDescription(`
     **==================================**
-    **Yazdığınız URL Başarıyla Eklendi. ✅**
+    **Yazdığınız URL Başarıyla Eklendi. <a:evt:789221117922508810> **
     `)
     .addField(prefix+'linkler','Komutunu Kullanarak Ekledigin Linklere Erisebilirsin')
     .setTimestamp()
@@ -105,40 +156,40 @@ Beni Sunucuna Eklemek Istemen Beni Sevindiriyor Hemen Altta Linkimi Bula Bilirsi
   .setTimestamp()
   .setDescription(`
 **==================================**
-**✅ » Isim -** __${client.user.username}__
-**✅ » Kanal Sayısı -** __${client.channels.size}__
-**✅ » Sunucu Sayısı -** __${client.guilds.size}__
-**✅ » Kullanıcı Sayısı -** __${client.guilds.reduce((a,b) => a + b.memberCount,0).toLocaleString()}__
-**✅ » Link Sayısı -** __${await db.fetch('Proje') || 1}__
-**✅ » Aktiflik Suresi -** __${moment.duration(client.uptime).format(" D [gün], H [saat], m [dakika], s [saniye]")}__
+** <a:mok:793563531437539338> Isim -** __${client.user.username}__
+** <a:mok:793563531437539338> Kanal Sayısı -** __${client.channels.size}__
+** <a:mok:793563531437539338> Sunucu Sayısı -** __${client.guilds.size}__
+** <a:mok:793563531437539338> Kullanıcı Sayısı -** __${client.guilds.reduce((a,b) => a + b.memberCount,0).toLocaleString()}__
+** <a:mok:793563531437539338> Link Sayısı -** __${await db.fetch('Proje') || 1}__
+** <a:mok:793563531437539338> Aktiflik Suresi -** __${moment.duration(client.uptime).format(" D [gün], H [saat], m [dakika], s [saniye]")}__
 **==================================**`)
 message.channel.send(Istatistik)
   }
   if(Split[0] == prefix+'istatistik') {
   const Istatistik = new Discord.RichEmbed()
-  .setColor('#20aaba')
+  .setColor('Black')
   .setThumbnail(message.author.avatarURL)
   .setTimestamp()
   .setDescription(`
 **==================================**
-**✅ » Isim -** __${client.user.username}__
-**✅ » Kanal Sayısı -** __${client.channels.size}__
-**✅ » Sunucu Sayısı -** __${client.guilds.size}__
-**✅ » Kullanıcı Sayısı -** __${client.guilds.reduce((a,b) => a + b.memberCount,0).toLocaleString()}__
-**✅ » Link Sayısı -** __${await db.fetch('Proje') || 1}__
-**✅ » Aktiflik Suresi -** __${moment.duration(client.uptime).format(" D [gün], H [saat], m [dakika], s [saniye]")}__
+** <a:mok:793563531437539338> Isim -** __${client.user.username}__
+** <a:mok:793563531437539338> Kanal Sayısı -** __${client.channels.size}__
+** <a:mok:793563531437539338> Sunucu Sayısı -** __${client.guilds.size}__
+** <a:mok:793563531437539338> Kullanıcı Sayısı -** __${client.guilds.reduce((a,b) => a + b.memberCount,0).toLocaleString()}__
+** <a:mok:793563531437539338> Link Sayısı -** __${await db.fetch('Proje') || 1}__
+** <a:mok:793563531437539338> Aktiflik Suresi -** __${moment.duration(client.uptime).format(" D [gün], H [saat], m [dakika], s [saniye]")}__
 **==================================**`)
 message.channel.send(Istatistik)
   }
 
   if(Split[0] == prefix+'s') {
   const Revoş = new Discord.RichEmbed()
-  .setColor('#20aaba')
+  .setColor('Black')
   .setThumbnail(message.author.avatarURL)
   .setTimestamp()
   .setDescription(`
   ==================================
-**» Şuanda Toplam \`${db.get('Proje')}\` URL Uptime Ediliyor ✅**
+**» Şuanda Toplam \`${db.get('Proje')}\` URL Uptime Ediliyor <a:evt:789221117922508810> **
 
 **» Bunlardan Sadece \`${db.fetch(`Sahiplik_${message.author.id}`) || null}\` Tanesi Senin ✅**
 ==================================`)
@@ -146,21 +197,21 @@ message.channel.send(Istatistik)
   }
   if(Split[0] == prefix+'say') {
   const Revoş = new Discord.RichEmbed()
-  .setColor('#20aaba')
+  .setColor('Black')
   .setThumbnail(message.author.avatarURL)
   .setTimestamp()
   .setDescription(`
   ==================================
-**» Şuanda Toplam \`${db.get('Proje')}\` URL Uptime Ediliyor ✅**
+**» Şuanda Toplam \`${db.get('Proje')}\` URL Uptime Ediliyor <a:evt:789221117922508810> **
 
-**» Bunlardan Sadece \`${db.fetch(`Sahiplik_${message.author.id}`) || null}\` Tanesi Senin ✅**
+**» Bunlardan Sadece \`${db.fetch(`Sahiplik_${message.author.id}`) || null}\` Tanesi Senin <a:evt:789221117922508810> **
 ==================================`)
   message.channel.send(Revoş)
   }
 
   if(Split[0] == prefix+'yardım') {
   const HugoMugo = new Discord.RichEmbed()
-  .setColor('#20aaba')
+  .setColor('Black')
   .setThumbnail(message.author.avatarURL)
   .setTimestamp()
   .setAuthor(client.user.username,client.user.avatarURL)
@@ -171,16 +222,16 @@ message.channel.send(Istatistik)
 » Dil: **TR**
 `)
   .addField('**» Uptime Bot Komutlari**',`
-💛 » [${prefix}link-kaldır]() Link Kaldırmanıza Yarar
-💛 » [${prefix}ekle]() Link Eklemenize Yarar
-💛 » [${prefix}erişim-kontrol](url gırebılırsn buralara) Erişim Kontrol
-💛 » [${prefix}linkler]() Liklerinizi Gösterir
+<a:ysl:794276095611502593> » [${prefix}link-kaldır]() Link Kaldırmanıza Yarar
+<a:ysl:794276095611502593> » [${prefix}ekle]() Link Eklemenize Yarar
+<a:ysl:794276095611502593> » [${prefix}erişim-kontrol](url gırebılırsn buralara) Erişim Kontrol
+<a:ysl:794276095611502593> » [${prefix}linkler]() Liklerinizi Gösterir
 `)
   .addField('**» Genel Komutlar**',`
-💛 » [${prefix}dil]() Botun Dlini Ayarlar
-💛 » [${prefix}davet]() Botun Davet Linkini Atar
-💛 » [${prefix}istatistik]() Bot Istatistigini Atar
-💛 » [${prefix}say]() Total Ve Senin Link Sayini Atar
+<a:ysl:794276095611502593> » [${prefix}dil]() Botun Dlini Ayarlar
+<a:ysl:794276095611502593> » [${prefix}davet]() Botun Davet Linkini Atar
+<a:ysl:794276095611502593> » [${prefix}istatistik]() Bot Istatistigini Atar
+<a:ysl:794276095611502593> » [${prefix}say]() Total Ve Senin Link Sayini Atar
 `)
 .addField('**» Destek Sunucum**','[Destek Sunucum]()')
 .addField('**» Davet Linkim**','[Beni Davet Et]()')
@@ -225,8 +276,8 @@ message.channel.send(Megenge)
 
 
 client.on('ready', () => {
-client.user.setActivity(`UptimeBOT`, { type: 'WATCHING' })
-//client.user.setStatus('dnd')
+client.user.setActivity(`FynixUptime`, { type: 'WATCHING' })
+//client.user.setStatus('idle')
 })
 
 client.on("message", async message => {
