@@ -189,9 +189,9 @@ message.channel.send(Istatistik)
   .setTimestamp()
   .setDescription(`
   ==================================
-**» Şuanda Toplam \`${db.get('Proje')}\` URL Uptime Ediliyor <a:evt:789221117922508810> **
+**» Şuanda Toplam \`${db.get('Proje')}\` URL Uptime Ediliyor <a:ony:794275787674484737> **
 
-**» Bunlardan Sadece \`${db.fetch(`Sahiplik_${message.author.id}`) || null}\` Tanesi Senin ✅**
+**» Bunlardan Sadece \`${db.fetch(`Sahiplik_${message.author.id}`) || null}\` Tanesi Senin <a:ony:794275787674484737>**
 ==================================`)
   message.channel.send(Revoş)
   }
@@ -202,9 +202,9 @@ message.channel.send(Istatistik)
   .setTimestamp()
   .setDescription(`
   ==================================
-**» Şuanda Toplam \`${db.get('Proje')}\` URL Uptime Ediliyor <a:evt:789221117922508810> **
+**» Şuanda Toplam \`${db.get('Proje')}\` URL Uptime Ediliyor <a:ony:794275787674484737> **
 
-**» Bunlardan Sadece \`${db.fetch(`Sahiplik_${message.author.id}`) || null}\` Tanesi Senin <a:evt:789221117922508810> **
+**» Bunlardan Sadece \`${db.fetch(`Sahiplik_${message.author.id}`) || null}\` Tanesi Senin <a:ony:794275787674484737> **
 ==================================`)
   message.channel.send(Revoş)
   }
