@@ -318,4 +318,5 @@ client.on("message", async message => {
 
 const Log = message => {
 console.log(`${message}`)
+client.login('')
 }
