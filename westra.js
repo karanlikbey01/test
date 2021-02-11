@@ -58,7 +58,7 @@ const fs = require('fs')
 require('express')().listen(1343)
 const moment = require('moment')
 require('moment-duration-format')
-const prefix = '+'
+const prefix = 's!'
 
 setInterval(() => {
 const Linkler = db.get('Linkler')
