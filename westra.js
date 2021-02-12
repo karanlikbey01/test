@@ -224,16 +224,15 @@ message.channel.send(Istatistik)
 » Dil: **TR**
 `)
   .addField('**» Uptime Bot Komutlari**',`
-➡ » [${prefix}link-kaldır]() Link Kaldırmanıza Yarar
-➡ » [${prefix}ekle]() Link Eklemenize Yarar
-➡ » [${prefix}erişim-kontrol](url gırebılırsn buralara) Erişim Kontrol
-➡ » [${prefix}linkler]() Liklerinizi Gösterir
+<a:cok:807362421634760704> » **${prefix}ekle: **Link Eklemenize Yarar
+<a:cok:807362421634760704> » **${prefix}erişim-kontrol]()Erişim Kontrol
+<a:cok:807362421634760704> » [${prefix}linkler]() Liklerinizi Gösterir
 `)
   .addField('**» Genel Komutlar**',`
-➡ » [${prefix}dil]() Botun Dlini Ayarlar
-➡ » [${prefix}davet]() Botun Davet Linkini Atar
-➡ » [${prefix}istatistik]() Bot Istatistigini Atar
-➡ » [${prefix}say]() Total Ve Senin Link Sayini Atar
+<a:cok:807362421634760704> » [${prefix}dil]() Botun Dlini Ayarlar
+<a:cok:807362421634760704> » [${prefix}davet]() Botun Davet Linkini Atar
+<a:cok:807362421634760704> » [${prefix}istatistik]() Bot Istatistigini Atar
+<a:cok:807362421634760704> » [${prefix}say]() Total Ve Senin Link Sayini Atar
 `)
 .addField('**» Destek Sunucum**','[Destek Sunucum]()')
 .addField('**» Davet Linkim**','[Beni Davet Et]()')
