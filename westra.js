@@ -103,13 +103,13 @@ client.on('message', async message => {
     .setColor('#A62019')
     .setThumbnail(message.author.avatarURL)
     .setDescription(`
-**==================================**
+**================================**
 ** Yazdığınız URL Eklenmiştir.** <a:online:805425022638227487>
-**==================================**
+**================================**
     `)
     .addField(prefix+'linkler','Komutunu Kullanarak Ekledigin Linklere Erisebilirsin')
     .setTimestamp()
-    .setImage('https://cdn.discordapp.com/attachments/761214958863122462/777849228805275648/standard.gif')
+    .setImage('https://i.hizliresim.com/wW6WDh.gif')
     message.channel.send(Emrecan)
     db.push('Linkler', { url: Link, owner: message.author.id, owner2: message.author.tag})
     db.add(`Sahiplik_${message.author.id}`,1)
@@ -123,7 +123,7 @@ client.on('message', async message => {
   **Sistem İçin Lütfen URL'nizi Girin:** <a:tik:803109731647488021> 
   **===============================**
   `)
-  .setImage('https://media.discordapp.net/attachments/748517679119335424/748562753253408920/IMG_20200827_192051.jpg?width=436&height=269')
+  .setImage('https://i.hizliresim.com/wW6WDh.gif')
   .setTimestamp()
   .setThumbnail(message.author.avatarURL)
   message.channel.send(UpTime)
@@ -145,7 +145,7 @@ Beni Sunucuna Eklemek Istemen Beni Sevindiriyor Hemen Altta Linkimi Bula Bilirsi
 ================================
 **`)
   .setThumbnail(message.author.avatarURL)
-  .setImage('https://cdn.discordapp.com/attachments/761214958863122462/777849228805275648/standard.gif')
+  .setImage('https://i.hizliresim.com/wW6WDh.gif')
   message.channel.send(Revo)
   }
 
