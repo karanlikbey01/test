@@ -73,7 +73,7 @@ console.error(e)
 }
 })
 console.log(`Proje : ${db.get('Proje') || 1} Başarıyla Hostandı`)
-}, 60000)
+}, 70000)
 
 client.on('ready', () => {
 console.log(`${client.user.username} Aktif!`)
