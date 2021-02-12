@@ -72,7 +72,7 @@ fetch(Link)
 console.error(e)
 }
 })
-console.log(`Proje Numaras Olan :  ${db.get('Proje') || 1} Proje Hostandı`)
+console.log(`Proje : ${db.get('Proje') || 1} Başarıyla Hostandı`)
 }, 60000)
 
 client.on('ready', () => {
