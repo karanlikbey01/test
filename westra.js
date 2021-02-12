@@ -93,7 +93,7 @@ client.on('message', async message => {
     .setColor('#A62019')
     .setDescription(`
     **==================================**
-    **Link Sistemde Zaten Bulunuyor. ❌** 
+    **Link Sistemde Zaten Bulunuyor.** <a:carp:807417467336130580> 
     ==================================
     `)
     .setTimestamp()
@@ -120,9 +120,8 @@ client.on('message', async message => {
   .setColor('#A62019')
   .setDescription(`
   **================================**
-  **Hata:** <a:carp:807417467336130580>
-  **URL Girin:** <a:tik:803109731647488021>
-  ===============================
+  **Sistem İçin Lütfen URL'nizi Girin:** <a:tik:803109731647488021> 
+  **===============================**
   `)
   .setImage('https://media.discordapp.net/attachments/748517679119335424/748562753253408920/IMG_20200827_192051.jpg?width=436&height=269')
   .setTimestamp()
