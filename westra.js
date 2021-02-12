@@ -229,7 +229,7 @@ message.channel.send(Istatistik)
 `)
   .addField('**» Genel Komutlar**',`
 <a:cok:807362421634760704> » **${prefix}dil:** Botun Dlini Ayarlar
-<a:cok:807362421634760704> » **${prefix}}davet:** Botun Davet Linkini Atar
+<a:cok:807362421634760704> » **${prefix}davet:** Botun Davet Linkini Atar
 <a:cok:807362421634760704> » **${prefix}istatistik:** Bot Istatistigini Atar
 <a:cok:807362421634760704> » **${prefix}say:** Total Ve Senin Link Sayini Atar
 `)
