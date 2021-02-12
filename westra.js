@@ -104,7 +104,7 @@ client.on('message', async message => {
     .setThumbnail(message.author.avatarURL)
     .setDescription(`
 **==================================**
-** Yazdığınız URL Eklenmiştir..
+** Yazdığınız URL Eklenmiştir.** <a:online:805425022638227487>
 **==================================**
     `)
     .addField(prefix+'linkler','Komutunu Kullanarak Ekledigin Linklere Erisebilirsin')
@@ -134,7 +134,7 @@ client.on('message', async message => {
   const Revo = new Discord.RichEmbed()
   .setColor('#A62019')
   .setDescription(`
-  **==================================
+  **================================
 Beni Sunucuna Eklemek Istemen Beni Sevindiriyor Hemen Altta Linkimi Bula Bilirsin Sen Olmassan 1 kisi eksik
 
 [Ekleme Linkim]()
@@ -142,7 +142,7 @@ Beni Sunucuna Eklemek Istemen Beni Sevindiriyor Hemen Altta Linkimi Bula Bilirsi
 [Destek Sunucum]()
 
 [Oy Vermeyi Unutma]()
-==================================
+================================
 **`)
   .setThumbnail(message.author.avatarURL)
   .setImage('https://cdn.discordapp.com/attachments/761214958863122462/777849228805275648/standard.gif')
