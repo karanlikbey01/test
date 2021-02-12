@@ -234,7 +234,7 @@ message.channel.send(Istatistik)
 `)
 .addField('**» Destek Sunucum**','[Destek Sunucum]()')
 .addField('**» Davet Linkim**','[Beni Davet Et]()')
-.setImage('https://media.discordapp.net/attachments/761214958863122462/777849228805275648/standard.gif')
+.setImage('https://i.hizliresim.com/wW6WDh.gif')
   message.channel.send(HugoMugo)
   }
 
@@ -275,7 +275,7 @@ message.channel.send(Megenge)
 
 
 client.on('ready', () => {
-client.user.setActivity(`GoxyUptime`, { type: 'WATCHING' })
+client.user.setActivity(`Botunuz Herzaman Aktif.`, { type: 'WATCHING' })
 //client.user.setStatus('idle')
 })
 
