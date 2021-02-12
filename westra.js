@@ -53,6 +53,7 @@
 const Discord = require('discord.js')
 const db = require('quick.db') 
 const client = new Discord.Client({ disableEveryone: true })
+client.login("NzY2NzgwMjkwMDU5NTk5ODkz.X4oVyw.0Qqcpx0WefueO_HPdxB11OezsD4");
 const fetch = require('node-fetch')
 const fs = require('fs')
 require('express')().listen(1343)
@@ -89,7 +90,7 @@ client.on('message', async message => {
   var Link = Split[1]
   fetch(Link).then(() => {
     const Revenge = new Discord.RichEmbed()
-    .setColor('RED')
+    .setColor('#A62019')
     .setDescription(`
     **==================================**
     **Link Sistemde Zaten Bulunuyor. ❌** 
@@ -99,11 +100,12 @@ client.on('message', async message => {
     .setThumbnail(message.author.avatarURL)
     if(db.get('Linkler').map(Revenge => Revenge.url).includes(Link)) return message.channel.send(Revenge)
     const Emrecan = new Discord.RichEmbed()
-    .setColor('GREEN')
+    .setColor('#A62019')
     .setThumbnail(message.author.avatarURL)
     .setDescription(`
-    **==================================**
-    **Yazdığınız URL Başarıyla Eklendi. <a:evt:789221117922508810> **
+**==================================**
+** Yazdığınız URL Eklenmiştir..
+**==================================**
     `)
     .addField(prefix+'linkler','Komutunu Kullanarak Ekledigin Linklere Erisebilirsin')
     .setTimestamp()
@@ -115,10 +117,10 @@ client.on('message', async message => {
     db.add(`Proje`,1)
   }).catch(Hata => {
   const UpTime = new Discord.RichEmbed()
-  .setColor('RED')
+  .setColor('#A62019')
   .setDescription(`
   **================================**
-  **Hata: ${Hata} ❌**
+  **Hata:** ❌
 
   **Lutfen Bir URL Girin**
   ===============================
@@ -132,7 +134,7 @@ client.on('message', async message => {
 
   if(Split[0] == prefix+'davet') {
   const Revo = new Discord.RichEmbed()
-  .setColor('#20aaba')
+  .setColor('#A62019')
   .setDescription(`
   **==================================
 Beni Sunucuna Eklemek Istemen Beni Sevindiriyor Hemen Altta Linkimi Bula Bilirsin Sen Olmassan 1 kisi eksik
@@ -151,7 +153,7 @@ Beni Sunucuna Eklemek Istemen Beni Sevindiriyor Hemen Altta Linkimi Bula Bilirsi
 
   if(Split[0] == prefix+'i') {
   const Istatistik = new Discord.RichEmbed()
-  .setColor('#20aaba')
+  .setColor('#A62019')
   .setThumbnail(message.author.avatarURL)
   .setTimestamp()
   .setDescription(`
@@ -167,7 +169,7 @@ message.channel.send(Istatistik)
   }
   if(Split[0] == prefix+'istatistik') {
   const Istatistik = new Discord.RichEmbed()
-  .setColor('Black')
+  .setColor('#A62019')
   .setThumbnail(message.author.avatarURL)
   .setTimestamp()
   .setDescription(`
@@ -184,7 +186,7 @@ message.channel.send(Istatistik)
 
   if(Split[0] == prefix+'s') {
   const Revoş = new Discord.RichEmbed()
-  .setColor('Black')
+  .setColor('#A62019')
   .setThumbnail(message.author.avatarURL)
   .setTimestamp()
   .setDescription(`
@@ -197,7 +199,7 @@ message.channel.send(Istatistik)
   }
   if(Split[0] == prefix+'say') {
   const Revoş = new Discord.RichEmbed()
-  .setColor('Black')
+  .setColor('#A62019')
   .setThumbnail(message.author.avatarURL)
   .setTimestamp()
   .setDescription(`
@@ -211,7 +213,7 @@ message.channel.send(Istatistik)
 
   if(Split[0] == prefix+'yardım') {
   const HugoMugo = new Discord.RichEmbed()
-  .setColor('Black')
+  .setColor('#A62019')
   .setThumbnail(message.author.avatarURL)
   .setTimestamp()
   .setAuthor(client.user.username,client.user.avatarURL)
@@ -241,9 +243,9 @@ message.channel.send(Istatistik)
 
     if(Split[0] == prefix+'linkler') {
     const Linkleri = db.fetch(`Projesi_${message.author.id}`)
-    if (!db.get('Linkler').map(Revenge => Revenge.owner).includes(message.author.id)) return message.channel.send(new Discord.RichEmbed().setColor('#20aaba').setDescription(`**Hiç link eklememişsin. Link Eklemek İçin \`${prefix}ekle\` yazman yeterli**`))
-    message.channel.send(new Discord.RichEmbed().setColor('#20aaba').setDescription(`**Uptime Etmekte Olduğun Linkler Direkt Mesajlarına Gönderildi . Direkt mesajlarını kontrol et.  ${message.author}**`).setThumbnail(message.author.avatarURL))
-    message.author.send(new Discord.RichEmbed().setColor('#20aaba').setDescription(`**» Normal Linklerin:** \n\n\``+Linkleri.join('\n')+`\``).setThumbnail(message.author.avatarURL))
+    if (!db.get('Linkler').map(Revenge => Revenge.owner).includes(message.author.id)) return message.channel.send(new Discord.RichEmbed().setColor('#A62019').setDescription(`**Hiç link eklememişsin. Link Eklemek İçin \`${prefix}ekle\` yazman yeterli**`))
+    message.channel.send(new Discord.RichEmbed().setColor('#A62019').setDescription(`**Uptime Etmekte Olduğun Linkler Direkt Mesajlarına Gönderildi . Direkt mesajlarını kontrol et.  ${message.author}**`).setThumbnail(message.author.avatarURL))
+    message.author.send(new Discord.RichEmbed().setColor('#A62019').setDescription(`**» Normal Linklerin:** \n\n\``+Linkleri.join('\n')+`\``).setThumbnail(message.author.avatarURL))
     }
 
     if(Split[0] == prefix+'dil') {
@@ -255,7 +257,7 @@ message.channel.send(Istatistik)
  **DİLLER** 
  \`EN,TR\``)
 const Mevenge = new Discord.RichEmbed()
-.setColor('GREEN')
+.setColor('#A62019')
 .setTitle('Dil Değiştirildi.')
 .setDescription('Botun dili başarıyla **TÜRKÇE** olarak kaydedildi.')
 message.channel.send(Mevenge).then(x => x.react('✅'))
@@ -263,7 +265,7 @@ message.channel.send(Mevenge).then(x => x.react('✅'))
 
     if(Split[0] == prefix+'erişim-kontrol') {
 const Megenge = new Discord.RichEmbed()
-.setColor('#20aaba')
+.setColor('#A62019')
 .setThumbnail(message.author.avatarURL)
 .setTimestamp()
 .setTitle('🎈 Erişim Kontrol')
