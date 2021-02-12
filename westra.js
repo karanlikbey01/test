@@ -120,9 +120,8 @@ client.on('message', async message => {
   .setColor('#A62019')
   .setDescription(`
   **================================**
-  **Hata:** ❌
-
-  **Lutfen Bir URL Girin**
+  **Hata:** <a:carp:807417467336130580>
+  **URL Girin:** <a:tik:803109731647488021>
   ===============================
   `)
   .setImage('https://media.discordapp.net/attachments/748517679119335424/748562753253408920/IMG_20200827_192051.jpg?width=436&height=269')
@@ -158,12 +157,12 @@ Beni Sunucuna Eklemek Istemen Beni Sevindiriyor Hemen Altta Linkimi Bula Bilirsi
   .setTimestamp()
   .setDescription(`
 **==================================**
-** ➡ Isim -** __${client.user.username}__
-** ➡ Kanal Sayısı -** __${client.channels.size}__
-** ➡ Sunucu Sayısı -** __${client.guilds.size}__
-** ➡ Kullanıcı Sayısı -** __${client.guilds.reduce((a,b) => a + b.memberCount,0).toLocaleString()}__
-** ➡ Link Sayısı -** __${await db.fetch('Proje') || 1}__
-** ➡ Aktiflik Suresi -** __${moment.duration(client.uptime).format(" D [gün], H [saat], m [dakika], s [saniye]")}__
+** <a:hype:805231936791904276> Isim -** __${client.user.username}__
+** <a:hype:805231936791904276> Kanal Sayısı -** __${client.channels.size}__
+** <a:hype:805231936791904276> Sunucu Sayısı -** __${client.guilds.size}__
+** <a:hype:805231936791904276> Kullanıcı Sayısı -** __${client.guilds.reduce((a,b) => a + b.memberCount,0).toLocaleString()}__
+** <a:hype:805231936791904276> Link Sayısı -** __${await db.fetch('Proje') || 1}__
+** <a:hype:805231936791904276> Aktiflik Suresi -** __${moment.duration(client.uptime).format(" D [gün], H [saat], m [dakika], s [saniye]")}__
 **==================================**`)
 message.channel.send(Istatistik)
   }
@@ -174,12 +173,12 @@ message.channel.send(Istatistik)
   .setTimestamp()
   .setDescription(`
 **==================================**
-** ➡ Isim -** __${client.user.username}__
-** ➡ Kanal Sayısı -** __${client.channels.size}__
-** ➡ Sunucu Sayısı -** __${client.guilds.size}__
-** ➡ Kullanıcı Sayısı -** __${client.guilds.reduce((a,b) => a + b.memberCount,0).toLocaleString()}__
-** ➡ Link Sayısı -** __${await db.fetch('Proje') || 1}__
-** ➡ Aktiflik Suresi -** __${moment.duration(client.uptime).format(" D [gün], H [saat], m [dakika], s [saniye]")}__
+** <a:hype:805231936791904276> Isim -** __${client.user.username}__
+** <a:hype:805231936791904276> Kanal Sayısı -** __${client.channels.size}__
+** <a:hype:805231936791904276> Sunucu Sayısı -** __${client.guilds.size}__
+** <a:hype:805231936791904276> Kullanıcı Sayısı -** __${client.guilds.reduce((a,b) => a + b.memberCount,0).toLocaleString()}__
+** <a:hype:805231936791904276> Link Sayısı -** __${await db.fetch('Proje') || 1}__
+** <a:hype:805231936791904276> Aktiflik Suresi -** __${moment.duration(client.uptime).format(" D [gün], H [saat], m [dakika], s [saniye]")}__
 **==================================**`)
 message.channel.send(Istatistik)
   }
@@ -191,9 +190,9 @@ message.channel.send(Istatistik)
   .setTimestamp()
   .setDescription(`
   ==================================
-**» Şuanda Toplam \`${db.get('Proje')}\` URL Uptime Ediliyor ☑ **
+**» Şuanda Toplam \`${db.get('Proje')}\` URL Uptime Ediliyor** <a:yumidc:808098829671858216>
 
-**» Bunlardan Sadece \`${db.fetch(`Sahiplik_${message.author.id}`) || null}\` Tanesi Senin ☑**
+**» Bunlardan Sadece \`${db.fetch(`Sahiplik_${message.author.id}`) || null}\` Tanesi Senin.** <a:yumidc:808098829671858216>
 ==================================`)
   message.channel.send(Revoş)
   }
@@ -204,9 +203,9 @@ message.channel.send(Istatistik)
   .setTimestamp()
   .setDescription(`
   ==================================
-**» Şuanda Toplam \`${db.get('Proje')}\` URL Uptime Ediliyor <a:ony:794275787674484737> **
+**» Şuanda Toplam \`${db.get('Proje')}\` URL Uptime Ediliyor.** <a:yumidc:808098829671858216>
 
-**» Bunlardan Sadece \`${db.fetch(`Sahiplik_${message.author.id}`) || null}\` Tanesi Senin <a:ony:794275787674484737> **
+**» Bunlardan Sadece \`${db.fetch(`Sahiplik_${message.author.id}`) || null}\` Tanesi Senin** <a:yumidc:808098829671858216>
 ==================================`)
   message.channel.send(Revoş)
   }
@@ -220,19 +219,19 @@ message.channel.send(Istatistik)
   .setDescription(`
 **Botumuz Uptime Ile Alakalı Bir Botdur**
 
-» Prefixim: **${prefix}**
+» **Prefixim:** **\`${prefix}\`**
 » Dil: **TR**
 `)
   .addField('**» Uptime Bot Komutlari**',`
-<a:cok:807362421634760704> » **${prefix}ekle: **Link Eklemenize Yarar
-<a:cok:807362421634760704> » **${prefix}erişim-kontrol]()Erişim Kontrol
-<a:cok:807362421634760704> » [${prefix}linkler]() Liklerinizi Gösterir
+<a:cok:807362421634760704> » **${prefix}ekle:** Link Eklemenize Yarar
+<a:cok:807362421634760704> » **${prefix}erişim-kontrol:** Erişim Kontrol
+<a:cok:807362421634760704> » **${prefix}linkler:** Liklerinizi Gösterir
 `)
   .addField('**» Genel Komutlar**',`
-<a:cok:807362421634760704> » [${prefix}dil]() Botun Dlini Ayarlar
-<a:cok:807362421634760704> » [${prefix}davet]() Botun Davet Linkini Atar
-<a:cok:807362421634760704> » [${prefix}istatistik]() Bot Istatistigini Atar
-<a:cok:807362421634760704> » [${prefix}say]() Total Ve Senin Link Sayini Atar
+<a:cok:807362421634760704> » **${prefix}dil:** Botun Dlini Ayarlar
+<a:cok:807362421634760704> » **${prefix}}davet:** Botun Davet Linkini Atar
+<a:cok:807362421634760704> » **${prefix}istatistik:** Bot Istatistigini Atar
+<a:cok:807362421634760704> » **${prefix}say:** Total Ve Senin Link Sayini Atar
 `)
 .addField('**» Destek Sunucum**','[Destek Sunucum]()')
 .addField('**» Davet Linkim**','[Beni Davet Et]()')
